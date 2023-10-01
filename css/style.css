@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #bd30e2;
+    font-family:  sans-serif;
+}
+
+/* Main Container Style */
+.container{
+    background-color: #ddd7d7;
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 2.3em 2.5em;
+    margin: auto;
+    margin-top: 3em;
+    border-radius: .62em;
+    box-shadow: 0 1.25em 1.8em rgb(8,21,65, 0.25) ;
+}
+.container::after{
+    background-color: #bd30e2;
+    width: 3em;
+    height: 3em;
+    content: '';
+    position: absolute;
+    top: 2.50em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.search-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2em;
+}
+.search-wrapper button{
+    font-size: 1em;
+    background-color: #3d64e6;
+    color: #fff;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.search-wrapper button:hover{
+    background-color: #033af1;
+}
+.search-wrapper input{
+    font-size: 1rem;
+    padding: 0 0.62em;
+    border: none;
+    border-bottom: 2px solid #3d64e6;
+    outline: none;
+    color: #222a43;
+    background-color: transparent;
+    grid-column: 1/ 3;
+}
+.icon{
+    display: none;
+}
+
+
+/* Ccountry Input result style */
+#result{
+    margin-top: 1.25em;
+}
+.flag-img{
+    display: block;
+    width: 45%;
+    min-width: 7.5em;
+    margin: 1.8em auto 1.2em auto;
+}
+.countryNam{
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: .5em;
+    color: #222a43;
+}
+.data-wrapper{
+    margin-bottom: .70em;
+}
+.data-wrapper p{
+    display: inline;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #222a43;
+
+}
+.data-wrapper span{
+    color: #505461;
+}
+.data-wrapper span a{
+    color: #505461;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.container h3{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff465a;
+}
+.container h4{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #ff465a;
+}
+
+/* All Country Name style*/
+#AllCountryNameBtn{
+    transform: translate(-29%, 109%);
+    background-color: #3d64e6;
+    color: #fff;
+    padding: .6em .9em;
+    font-size: .90em;
+    border: none;
+    border-radius:  0em .62rem  0rem .62em;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+#AllCountryNameBtn:hover{
+    background-color: #1043eb;
+}
+.activeBtn{
+    border-radius:  0em .22rem  .22em 0em;
+    background-color: red;
+}
+ol{
+    margin-left: 1.9em;
+    padding-top: 2.5em;
+    list-style: decimal-leading-zero;
+    display: none;
+
+}
+.active{
+    display: block;
+}
+ol li{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #222a43;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #222a43;
+    cursor: pointer;
+}
+.Disable{
+    display: none;
+}
+
+/* representative style */
+
+@media screen and (max-width: 576px){
+    .container{
+        padding: 2rem 2rem;
+    }
+
+    .icon{
+        display: block;
+        font-size: 1rem;
+        color: #1043eb;
+        position: relative;
+        left: -2.62rem;
+        bottom: -.1rem;
+        cursor: pointer;
+    }
+    .search-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+    .search-wrapper input{
+        border-bottom: none;
+        border: .1rem solid #1043eb;
+        padding: .5rem .1rem;
+        border-radius: .3rem;
+        width: 16.33rem;
+    }
+
+    .search-wrapper button {
+        display: none;
+    }
+    #AllCountryNameBtn{
+        margin-left: .5rem;
+        margin-bottom: 4px;
+    }
+}
