@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #bd30e2;
+    width: 100%;
+    height: 93vh;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
     font-family:  sans-serif;
 }
 
@@ -22,7 +24,7 @@ body{
     box-shadow: 0 1.25em 1.8em rgb(8,21,65, 0.25) ;
 }
 .container::after{
-    background-color: #bd30e2;
+    background-color: #58A3FD;
     width: 3em;
     height: 3em;
     content: '';

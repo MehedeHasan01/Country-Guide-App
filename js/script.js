@@ -11,12 +11,12 @@ const CountryList = document.querySelector('.CountryList')
 
 // Alll DOM Event
 SearchBtn.addEventListener('click',()=>{
-    ShowCountryDetails();
+    ShowCountryDetails()
     countryInp.value = '';
 
 });
 SearchIcon.addEventListener('click',()=>{
-    ShowCountryDetails();
+    ShowCountryDetails()
     countryInp.value = '';
 
 });
@@ -165,4 +165,5 @@ function selectCountry(event){
     AllCountryNameBtn.style.display = 'none'
 
     ShowCountryDetails()
+    countryInp.value = '';
 }
