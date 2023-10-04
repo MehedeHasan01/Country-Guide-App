@@ -11,11 +11,13 @@ const CountryList = document.querySelector('.CountryList')
 
 // Alll DOM Event
 SearchBtn.addEventListener('click',()=>{
-    ShowCountryDetails()
+    ShowCountryDetails();
+    countryInp.value = '';
 
 });
 SearchIcon.addEventListener('click',()=>{
-    ShowCountryDetails()
+    ShowCountryDetails();
+    countryInp.value = '';
 
 });
 countryInp.addEventListener('input', ()=>{
